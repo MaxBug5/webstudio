@@ -53,3 +53,66 @@ a {
 .contacts-link:focus {
     color: #404bbf;
 }
+
+.button {
+ width: 1440px;
+ height: 600px;
+ background: #2e2f42;
+}
+
+.text1{
+    
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+}
+
+.button-clas{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+}
+
+.text2{
+   
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        background: #f4f4fd;
+        width: 1440px;
+        height: 732px;
+}
+.text3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;    
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.footer-clas{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+}
+
+.logo-part-footer{
+    color: #f4f4fd;
+}
+
+.footer{
+    background: #2e2f42;
+    width: 1440px;
+    height: 312px;
+}
