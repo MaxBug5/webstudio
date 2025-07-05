@@ -104,7 +104,6 @@ a {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  background: #f4f4fd;
   text-align: center;
 }
 
@@ -116,7 +115,9 @@ a {
   color: #2e2f42;
   text-align: center;
 }
-
+.s-three {
+  background: #f4f4fd;
+}
 .footer-class {
   font-weight: 400;
   font-size: 16px;
