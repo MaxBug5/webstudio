@@ -35,6 +35,7 @@ a {
 }
 
 .visually-hidden {
+  visibility: hidden;
 }
 
 .page-header {
@@ -114,6 +115,7 @@ a {
 
 .hero {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .title-one {
@@ -123,15 +125,22 @@ a {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 
 .button-class {
-  background: #4d5ae5;
+  display: block;
+  min-width: 169px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
   letter-spacing: 0.04em;
   cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-class:hover,
@@ -167,10 +176,22 @@ a {
   background: #2e2f42;
 }
 
+.s-two {
+  padding: 120px 0;
+}
+
 .s-two-list {
+  display: flex;
+  gap: 24px;
 }
 
 .s-two-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .s-two-list-p {
