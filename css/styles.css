@@ -119,7 +119,7 @@ img {
 }
 
 .nav-link-active::after {
-  content: '';
+  content: "";
   width: 100%;
   position: absolute;
   left: 0;
@@ -385,6 +385,25 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.s-four-img {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.s-four-img:hover .overlay {
+  transform: translatey(0);
 }
 
 .wrapper {
