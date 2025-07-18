@@ -231,7 +231,7 @@ img {
   gap: 8px;
 }
 
-.s-two-list-item-icon{
+.s-two-list-item-icon {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
@@ -240,7 +240,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
-  
 }
 
 .s-two-list-p {
@@ -271,9 +270,9 @@ img {
 
 .s-three-list-item {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+
   width: 264px;
-  height: 380px;
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -301,6 +300,31 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.sm-link-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.sm-list-item {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+}
+.sm-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.sm-icon {
+  fill: #f4f4fd;
 }
 
 .s-four {
@@ -340,4 +364,29 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.f-sm-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.f-sm {
+  border: 1px solid red;
+}
+.f-sm-link-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.f-sm-list-item {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
 }
