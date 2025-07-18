@@ -365,15 +365,23 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.f-logo-container {
+}
 .f-sm-p {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+  padding-top: 6px;
 }
 .f-sm {
-  border: 1px solid red;
+  margin-left: 120px;
 }
 .f-sm-link-list {
   display: flex;
