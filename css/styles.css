@@ -437,9 +437,9 @@ img {
   transform: translatey(0);
 }
 
-.wrapper {
+.footer-container {
   display: flex;
-  flex-direction: row;
+  align-items: baseline;
 }
 
 .f-sm-p {
