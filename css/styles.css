@@ -160,8 +160,10 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -457,11 +459,9 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  padding-top: 6px;
 }
 
 .f-sm {
-  margin-left: 120px;
 }
 
 .f-sm-link-list {
