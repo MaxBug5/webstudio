@@ -204,7 +204,9 @@ img {
 }
 
 .button-class:hover,
-.button-class:focus {
+.button-class:focus,
+.footer-button-class:hover,
+.footer-button-class:focus {
   background: #404bbf;
 }
 
@@ -462,6 +464,7 @@ img {
 }
 
 .f-sm {
+  margin-right: 80px;
 }
 
 .f-sm-link-list {
@@ -490,4 +493,56 @@ img {
 .f-sm-link:hover,
 .f-sm-link:focus {
   background-color: #31d0aa;
+}
+
+.foter-class-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.foter-class-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  width: 264px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+  padding: 8px 16px;
+}
+
+.footer-form-class {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-button-class {
+  display: flex;
+  border-radius: 4px;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  width: 165px;
+  height: 40px;
+}
+
+.form-caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
 }
