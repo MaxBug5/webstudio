@@ -577,6 +577,13 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-caption {
+  margin-bottom: 16px;
 }
 
 .backdrop.is-open {
@@ -599,6 +606,19 @@ img {
 }
 
 .modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+  display: block;
+}
+.label-wrapper {
+  /* display: flex;
+  flex-direction: column;
+  gap: 4px; */
+  display: block;
 }
 .modal-input-frame {
   position: relative;
