@@ -7,6 +7,10 @@ body {
   color: #434455;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -160,10 +164,8 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -563,6 +565,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -596,6 +599,7 @@ img {
 .backdrop:not(.is-open) .modal {
   transition: translate(-50%, -50%) scale(1.5);
 }
+
 .modal-input {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -617,6 +621,7 @@ img {
   margin-bottom: 4px;
   display: block;
 }
+
 .label-wrapper {
   /* display: flex;
   flex-direction: column;
@@ -624,9 +629,11 @@ img {
   display: block;
   margin-bottom: 8px;
 }
+
 .modal-input-frame {
   position: relative;
 }
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
@@ -635,12 +642,13 @@ img {
   transform: translateY(-50%);
   fill: #2e2f42;
 }
+
 .modal-input:focus,
 .modal-input-comment:focus {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus+.modal-input-icon {
   fill: #4d5ae5;
 }
 
@@ -752,13 +760,13 @@ img {
   margin-right: 8px;
 }
 
-.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-icon {
+.modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-label-box {
+.modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-label-box {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
