@@ -36,12 +36,6 @@ img {
   display: block;
 }
 
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,6 +49,14 @@ img {
   overflow: hidden;
 }
 
+/* mobile view */
+
+.container {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: auto;
+}
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -63,18 +65,15 @@ img {
 
 .header-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav {
   display: flex;
-  align-items: center;
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: none;
 }
 
 .logo {
@@ -87,6 +86,18 @@ img {
   color: #4d5ae5;
 }
 
+.burger-menu {
+  fill: #2f2f37;
+}
+
+.burger-menu-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
 .header-logo {
   padding: 24px 0;
   margin-right: 76px;
@@ -94,9 +105,9 @@ img {
 }
 
 .footer-logo {
-  margin-right: 76px;
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .header-logo .logo-part {
@@ -108,9 +119,7 @@ img {
 }
 
 .contacts-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: none;
 }
 
 .nav-link {
@@ -168,14 +177,14 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image.jpg);
+    url(../images/hero-image-m.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  max-width: 320px;
 
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 72px 0;
 }
 
 @media (min-resolution: 192dpi) {
@@ -184,19 +193,19 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-image@2x.jpg);
+      url(../images/hero-image-m-@2x.jpg);
   }
 }
 
 .title-one {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
-  margin: 0 auto 48px;
-  max-width: 496px;
+  margin: 0 auto 72px;
+  max-width: 216px;
 }
 
 .button-class {
@@ -258,57 +267,54 @@ img {
 }
 
 .s-two {
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .s-two-list {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 .s-two-list-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 72px;
 }
 
 .s-two-list-item-icon {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+  display: none;
 }
 
 .s-two-list-p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 72px;
 }
 
 .s-two-header {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .s-three-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .s-three {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .s-three-list-item {
@@ -384,7 +390,7 @@ img {
 }
 
 .s-four {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .s-four-list {
@@ -461,11 +467,13 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-class-item {
-  margin-right: 120px;
+  margin-right: 16px;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .f-sm-p {
@@ -475,10 +483,12 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .f-sm {
-  margin-right: 80px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .f-sm-link-list {
@@ -523,16 +533,18 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
   background-color: transparent;
   padding: 8px 16px;
 }
 
 .footer-form-class {
   display: flex;
-  gap: 24px;
+  gap: 16px;
+  flex-direction: column;
 }
 
 .footer-button-class {
@@ -548,10 +560,11 @@ img {
   align-items: center;
   color: #fff;
   border: none;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .footer-button-icon {
@@ -566,6 +579,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .backdrop {
