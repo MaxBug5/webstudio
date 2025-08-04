@@ -858,6 +858,42 @@ img {
         url(../images/hero-image-t-@x2.jpg);
     }
   }
+  .burger-menu {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contacts-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts-link {
+    padding: 0;
+    margin: 0;
+  }
 
   .s-two-list {
     flex-direction: row;
@@ -929,5 +965,6 @@ img {
     text-align: start;
     margin-bottom: 17px;
   }
+
   /* tablet-end */
 }
