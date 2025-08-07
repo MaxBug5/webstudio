@@ -966,5 +966,23 @@ img {
     margin-bottom: 17px;
   }
 
+  .title-one {
+    font-weight: 700;
+    font-size: 56px;
+
+    margin: 0 auto 48px;
+    max-width: 496px;
+  }
+
+  .modal {
+    width: 408px;
+    height: 584px;
+    padding: 72px 24px 24px 16px;
+  }
+
+  .modal-input-comment {
+    width: 100%;
+  }
+
   /* tablet-end */
 }
