@@ -999,9 +999,9 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-image.jpg);
-    max-width: 1158px;
-    padding: 112px 0;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 188px 0;
   }
 
   @media (min-resolution: 192dpi) {
@@ -1013,18 +1013,37 @@ img {
         url(../images/hero-image-@x2.jpg);
     }
   }
-  .contacts {
-    font-style: normal;
-    margin-left: auto;
-  }
 
   .header-container {
     display: flex;
     align-items: center;
   }
 
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+    display: inline-block;
+  }
+
+  .contacts {
+    font-style: normal;
+    margin-left: auto;
+  }
+
   .contacts-list {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 40px;
   }
@@ -1075,6 +1094,11 @@ img {
 
   .s-four-list-item {
     flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+  .footer-class-item {
+    margin-right: 120px;
+    gap: 16px;
   }
 
   /* end */
